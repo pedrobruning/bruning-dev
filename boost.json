@@ -8,5 +8,7 @@
         "gemini",
         "vscode"
     ],
-    "guidelines": []
+    "guidelines": [
+        "filament/filament"
+    ]
 }
