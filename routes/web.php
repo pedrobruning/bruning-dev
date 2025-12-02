@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
 Route::get('/locale/{lang}', function ($lang) {
-    if (in_array($lang, ['en', 'pt'])) {
+    if (in_array($lang, ['en', 'pt-BR'])) {
         Session::put('locale', $lang);
     }
     return redirect()->back();

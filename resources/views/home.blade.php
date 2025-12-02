@@ -6,7 +6,7 @@
                 {{ __('Building digital products with') }} <span class="text-primary">{{ __('purpose') }}</span>.
             </h1>
             <p class="text-xl text-slate-400 leading-relaxed mb-10">
-                {{ __('I am Pedro Schier, a Software Engineer and Co-Founder based in Curitiba, Brazil. I specialize in building scalable back-end systems and integrating AI solutions to solve real-world problems.') }}
+                {{ __('I am Pedro Bruning, an Artificial Intelligence Engineer and Co-Founder based in Curitiba, Brazil. I specialize in building scalable back-end systems and integrating AI solutions to solve real-world problems.') }}
             </p>
             <div class="flex gap-4">
                 <a href="{{ route('projects.index') }}" class="px-6 py-3 bg-primary hover:bg-primary-hover text-white font-semibold rounded-lg transition-colors">

@@ -39,7 +39,7 @@
                 <div class="flex items-center gap-2 text-sm font-medium">
                     <a href="{{ route('locale', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'text-white' : 'text-slate-500 hover:text-slate-300' }}">EN</a>
                     <span class="text-slate-700">/</span>
-                    <a href="{{ route('locale', 'pt') }}" class="{{ app()->getLocale() === 'pt' ? 'text-white' : 'text-slate-500 hover:text-slate-300' }}">PT</a>
+                    <a href="{{ route('locale', 'pt-BR') }}" class="{{ app()->getLocale() === 'pt-BR' ? 'text-white' : 'text-slate-500 hover:text-slate-300' }}">PT</a>
                 </div>
             </div>
         </nav>

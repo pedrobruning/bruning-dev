@@ -31,6 +31,8 @@
                         <li>{{ __('Develop and maintain features for Anti-Fraud and Chargeback applications.') }}</li>
                         <li>{{ __('Work with a technology stack including OOP, PHP, TDD, and MySQL.') }}</li>
                         <li>{{ __('Collaborate with cross-functional teams to deliver tailored solutions.') }}</li>
+                        <li>{{ __('Working on a high TPS application. With avg 100 TPS with a 99.99% uptime.') }}</li>
+                        <li>{{ __('Delivered several integrations between EBANX and external services.') }}</li>
                     </ul>
                 </div>
 
@@ -58,6 +60,18 @@
                         <li>{{ __('Optimized Warehouse Management System leveraging Machine Learning.') }}</li>
                     </ul>
                 </div>
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-700 border-4 border-slate-900"></span>
+                    <h3 class="text-xl font-bold">Full Stack Developer</h3>
+                    <div class="text-primary font-medium mb-1">VHSYS</div>
+                    <div class="text-sm text-slate-500 mb-4">Feb 2020 – Dec 2021 • São José dos Pinhais, Brazil</div>
+                    <ul class="list-disc list-outside ml-4 text-slate-400 space-y-1">
+                        <li>{{ __('Responsible for analyzing and implementing new tasks, diagnosing and resolving bugs, and assisting other developers.') }}</li>
+                        <li>{{ __('Worked on projects related to Laravel, PHP, Python 3 (Chalice), MySQL, JavaScript, React, Vue, AWS (Lambda, S3, SQS).') }}</li>
+                        <li>{{ __('Always seeking to implement code following SOLID design principles and implementing various design patterns.') }}</li>
+                        <li>{{ __('Worked integrating with banking systems before OpenFinance was a thing in Brazil, handling Finance ERP modules with DRE and other accounting applications.') }}</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -72,15 +86,46 @@
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Scoras Academy -->
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-800">
+                    <h3 class="font-bold mb-1">{{ __('AI Agent Development with Pydantic AI Framework') }}</h3>
+                    <div class="text-primary text-sm mb-2">Scoras Academy</div>
+                    <div class="text-slate-500 text-xs mb-3">Nov 2025 - {{ __('Present') }}</div>
+                    <p class="text-slate-400 text-sm">
+                        {{ __('Developing robust AI agents using Pydantic AI, a Python framework that provides type safety, automatic data validation, and granular control. The project includes the implementation of system prompts, dependency injection, integration with multiple LLMs (Gemini, Anthropic, OpenRouter, AWS Bedrock), creation of custom tools, and retry/self-correction strategies. Focused on production-grade applications with a modular and scalable architecture.') }}
+                    </p>
+                </div>
+
+                <!-- SENAI -->
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-800">
+                    <h3 class="font-bold mb-1">{{ __('Technical Course in Information Technology') }}</h3>
+                    <div class="text-primary text-sm mb-2">SENAI</div>
+                    <div class="text-slate-500 text-xs mb-3">2017 - 2018</div>
+                    <p class="text-slate-400 text-sm mb-2">
+                        {{ __('Learned to program applications and develop systems using Java (Primefaces), MySQL, HTML, and CSS. Gained knowledge in system modeling, management, UML, and design patterns.') }}
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">MySQL</span>
+                        <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">Java</span>
+                        <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">JavaScript</span>
+                    </div>
+                </div>
+
                 <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-800">
                     <h3 class="font-bold mb-1">Postgraduate in Artificial Intelligence</h3>
                     <div class="text-primary text-sm mb-2">UTFPR</div>
-                    <div class="text-slate-500 text-xs">Nov 2024 - May 2026</div>
+                    <div class="text-slate-500 text-xs mb-3">Nov 2024 - May 2026</div>
+                    <p class="text-slate-400 text-sm">
+                        {{ __('Specialization focused on AI software development for robotics, data analysis, speech and image recognition, big data engineering, and business strategy consulting. Covers Python, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and Neural Networks.') }}
+                    </p>
                 </div>
                 <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-800">
                     <h3 class="font-bold mb-1">Bachelor's Degree in Information Systems</h3>
                     <div class="text-primary text-sm mb-2">UniSenaiPR</div>
-                    <div class="text-slate-500 text-xs">Feb 2019 - Oct 2022</div>
+                    <div class="text-slate-500 text-xs mb-3">Feb 2019 - Oct 2022</div>
+                    <p class="text-slate-400 text-sm">
+                        {{ __('Comprehensive curriculum covering Software Engineering, Data Science, Algorithms, Computer Architecture, Object-Oriented Systems, Front-End & Back-End Development, Database Management (Relational & NoSQL), UX/UI Design, Mobile Development, Cloud Computing, IoT, Artificial Intelligence, Machine Learning, Computer Vision, Cybersecurity, and DevOps.') }}
+                    </p>
                 </div>
             </div>
         </section>
