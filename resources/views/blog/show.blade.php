@@ -13,8 +13,10 @@
             @endif
         </header>
 
-        <div class="prose prose-invert prose-lg max-w-none">
-            {!! $post->content !!}
+        <div class="prose prose-lg prose-invert max-w-none prose-headings:text-slate-50 prose-p:text-slate-300 prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-slate-50 prose-code:text-slate-50 prose-pre:bg-slate-800">
+            <x-markdown>
+                {!! $post->content !!}
+            </x-markdown>
         </div>
     </article>
 </x-app-layout>

@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Projects\Schemas;
 
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Tabs;
@@ -30,22 +31,26 @@ class ProjectForm
                                 Textarea::make('description.en')
                                     ->label('Description')
                                     ->rows(3),
-                                RichEditor::make('content.en')
+                                MarkdownEditor::make('content.en')
                                     ->label('Content')
-                                    ->fileAttachmentsDirectory('projects'),
+                                    ->fileAttachmentsDirectory('projects')
+                                    ->columnSpanFull()
+                                    ->extraAttributes(['style' => 'min-height: 500px']),
                             ]),
                         Tabs\Tab::make('Portuguese')
                             ->schema([
-                                TextInput::make('title.pt')
+                                TextInput::make('title.pt-BR')
                                     ->label('Title (PT)'),
-                                TextInput::make('slug.pt')
+                                TextInput::make('slug.pt-BR')
                                     ->label('Slug (PT)'),
-                                Textarea::make('description.pt')
+                                Textarea::make('description.pt-BR')
                                     ->label('Description (PT)')
-                                    ->rows(3),
-                                RichEditor::make('content.pt')
+                                    ->rows(5),
+                                MarkdownEditor::make('content.pt-BR')
                                     ->label('Content (PT)')
-                                    ->fileAttachmentsDirectory('projects'),
+                                    ->fileAttachmentsDirectory('projects')
+                                    ->columnSpanFull()
+                                    ->extraAttributes(['style' => 'min-height: 500px']),
                             ]),
                     ])->columnSpanFull(),
 
