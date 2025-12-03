@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Posts\Schemas;
 
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Tabs;
@@ -31,22 +32,28 @@ class PostForm
                                 Textarea::make('excerpt.en')
                                     ->label('Excerpt')
                                     ->rows(3),
-                                RichEditor::make('content.en')
+                                MarkdownEditor::make('content.en')
                                     ->label('Content')
-                                    ->fileAttachmentsDirectory('posts'),
+                                    ->fileAttachmentsDirectory('posts')
+                                    ->columnSpanFull()
+                                    ->extraAttributes(['style' => 'min-height: 500px']),
                             ]),
                         Tabs\Tab::make('Portuguese')
                             ->schema([
-                                TextInput::make('title.pt')
-                                    ->label('Title (PT)'),
-                                TextInput::make('slug.pt')
-                                    ->label('Slug (PT)'),
-                                Textarea::make('excerpt.pt')
+                                TextInput::make('title.pt-BR')
+                                    ->label('Title (PT)')
+                                    ->required(),
+                                TextInput::make('slug.pt-BR')
+                                    ->label('Slug (PT)')
+                                    ->required(),
+                                Textarea::make('excerpt.pt-BR')
                                     ->label('Excerpt (PT)')
-                                    ->rows(3),
-                                RichEditor::make('content.pt')
+                                    ->rows(5),
+                                MarkdownEditor::make('content.pt-BR')
                                     ->label('Content (PT)')
-                                    ->fileAttachmentsDirectory('posts'),
+                                    ->fileAttachmentsDirectory('posts')
+                                    ->columnSpanFull()
+                                    ->extraAttributes(['style' => 'min-height: 500px']),
                             ]),
                     ])->columnSpanFull(),
 

@@ -54,7 +54,7 @@
             <p>&copy; {{ date('Y') }} Pedro Schier. All rights reserved.</p>
             <div class="mt-4 flex justify-center gap-4">
                 <a href="https://github.com/pedrobruning" target="_blank" class="hover:text-white transition-colors">GitHub</a>
-                <a href="https://linkedin.com/in/pedrohenrique-bruning" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://linkedin.com/in/pedro-henrique-bruning" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
             </div>
         </footer>
     </div>
