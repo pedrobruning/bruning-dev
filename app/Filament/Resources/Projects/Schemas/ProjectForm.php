@@ -66,6 +66,7 @@ class ProjectForm
                             ->prefixIcon('heroicon-o-code-bracket'),
                         FileUpload::make('thumbnail')
                             ->image()
+                            ->disk('public')
                             ->directory('projects/thumbnails'),
                         TextInput::make('sort_order')
                             ->numeric()
