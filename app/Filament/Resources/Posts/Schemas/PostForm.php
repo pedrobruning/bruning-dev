@@ -62,6 +62,7 @@ class PostForm
                         DateTimePicker::make('published_at'),
                         FileUpload::make('image')
                             ->image()
+                            ->disk('public')
                             ->directory('posts/thumbnails'),
                         Toggle::make('is_active')
                             ->default(true),
