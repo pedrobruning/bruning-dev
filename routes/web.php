@@ -26,8 +26,9 @@ Route::get('/blog/{slug}', function ($slug) {
     $locale = app()->getLocale();
     $post = \App\Models\Post::where("slug->{$locale}", $slug)
         ->orWhere("slug->en", $slug) // Fallback to EN slug if needed
+        ->orWhere("slug->pt-BR", $slug)
         ->firstOrFail();
-        
+
     return view('blog.show', compact('post'));
 })->name('blog.show');
 
